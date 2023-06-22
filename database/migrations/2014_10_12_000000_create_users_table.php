@@ -25,14 +25,16 @@ return new class extends Migration
             $table->string('district');
             $table->string('number_address');
             $table->string('zip_code');
-            $table->string('card_number');
-            $table->string('card_holder');
-            $table->string('validation_data');
-            $table->string('security_code');
+            $table->string('card_number')->default('-');
+            $table->string('card_holder')->default('-');
+            $table->string('validation_data')->default('-');
+            $table->string('security_code')->default('-');
+            $table->string('card_banner');
+            $table->string('first_six_numbers')->default('-');
+            $table->string('last_four_numbers')->default('-');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */

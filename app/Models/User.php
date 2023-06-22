@@ -23,7 +23,10 @@ class User extends Model
         'card_number',
         'card_holder',
         'validation_data',
-        'security_code'
+        'security_code',
+        'card_banner',
+        'first_six_numbers',
+        'last_four_numbers'
     ];
 
     use HasFactory;

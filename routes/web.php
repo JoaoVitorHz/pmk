@@ -14,6 +14,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [UserController::class, 'read']);
-Route::post('/create-user', [UserController::class, 'create']);
+Route::get('/', [UserController::class, 'Read']);
+Route::post('/create-user', [UserController::class, 'Create']);
 
